@@ -31,15 +31,11 @@ sites/*/translations
 xmlrpc.php
 /includes
 /misc
-/modules
 /profiles
 /themes
 /tests
 
 # Ignore paths that contain user-generated content.
-docroot/sites/*/files
-docroot/sites/*/private
-web/sites/all/translations/*
 .sass-cache
 .directory
 
