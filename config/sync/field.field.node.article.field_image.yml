@@ -1,0 +1,40 @@
+uuid: 7b414b8e-966a-4963-a734-7cb6fd9e4ae8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.article
+  module:
+    - image
+_core:
+  default_config_hash: PmVL51L3A9QGbPLoeLHw5epAPszeZRasCeC3imeeDRQ
+id: node.article.field_image
+field_name: field_image
+entity_type: node
+bundle: article
+label: Imagen
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

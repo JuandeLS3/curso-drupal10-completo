@@ -1,0 +1,33 @@
+services:
+  php:
+    image: wodby/drupal:$DRUPAL_TAG
+    environment:
+      PHP_FPM_CLEAR_ENV: "no"
+      PHP_XDEBUG: 1
+      PHP_XDEBUG_MODE: debug
+      PHP_IDE_CONFIG: serverName=drupal1
+      PHP_XDEBUG_IDEKEY: "PHPSTORM"
+      PHP_XDEBUG_REMOTE_HOST: 127.0.0.1
+      PHP_XDEBUG_LOG: /tmp/php-xdebug.log
+      PHP_XDEBUG_DEFAULT_ENABLE: 1
+      PHP_XDEBUG_START_WITH_REQUEST: "yes"
+    #volumes:
+    #- codebase:/var/www/html
+
+  crond:
+    image: wodby/drupal:$DRUPAL_TAG
+    environment:
+      PHP_FPM_CLEAR_ENV: "no"
+    #volumes:
+    #- codebase:/var/www/html
+
+  #nginx:
+    #volumes:
+    #- codebase:/var/www/html
+
+#  webgrind:
+#    volumes:
+#    - codebase:/mnt/codebase
+
+volumes:
+  codebase:
