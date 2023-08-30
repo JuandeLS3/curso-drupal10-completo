@@ -27,13 +27,11 @@ class INE {
 
   public function test() {
     $client = \Drupal::httpClient();
-    //$endpoint = "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/50902?nult=1";
     $endpoint = $this->api_endpoint;
     $file_contents = 'N/A';
 
     try {
       $request = $client->get($endpoint);
-      //$status = $request->getStatusCode();
       $file_contents = $request->getBody()->getContents();
     }
     catch (GuzzleException $e) {
