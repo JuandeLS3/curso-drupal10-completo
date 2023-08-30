@@ -1,0 +1,3 @@
+config ine api settings:
+  title: 'Configure INE API Settings'
+  description: 'Check if user has access to configure INE API credentials'

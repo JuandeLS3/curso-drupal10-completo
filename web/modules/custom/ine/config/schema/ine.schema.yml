@@ -1,0 +1,7 @@
+ine.settings:
+  type: config_object
+  label: 'INE Settings'
+  mapping:
+    api_endpoint:
+      type: string
+      label: 'Endpoint (URL)'

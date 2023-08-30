@@ -1,0 +1,17 @@
+ine.test:
+  path: '/admin/services/ine/test'
+  defaults:
+    _controller: '\Drupal\ine\Controller\INEController::test'
+    _title: 'INE Test API'
+  requirements:
+    _permission: 'administer site configuration'
+
+ine.settings:
+  path: '/admin/services/ine/settings'
+  defaults:
+    _form: '\Drupal\ine\Form\INESettingsForm'
+    _title: 'INE API Credentials'
+  requirements:
+    _permission: 'config ine api settings'
+  options:
+    _admin_route: true

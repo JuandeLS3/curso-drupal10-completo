@@ -1,0 +1,3 @@
+services:
+  ine.api:
+    class: Drupal\ine\INE

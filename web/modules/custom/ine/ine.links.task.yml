@@ -1,0 +1,9 @@
+ine.ping:
+  title: INE API Status
+  route_name: ine.test
+  base_route: ine.settings
+
+ine.settings:
+  title: Settings
+  route_name: ine.settings
+  base_route: ine.settings

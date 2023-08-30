@@ -1,0 +1,11 @@
+ine.ping:
+  title: 'INE Status'
+  description: 'Check INE API connect.'
+  route_name: ine.test
+  parent: ine.settings
+
+ine.settings:
+  title: 'INE Settings'
+  description: 'INE API Settings.'
+  route_name: ine.settings
+  parent: system.admin_config_services

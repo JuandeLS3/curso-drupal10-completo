@@ -1,0 +1,8 @@
+name: INE
+description: Provides INE functionalities.
+package: Custom
+type: module
+core_version_requirement: ^10
+
+# Information added by Drupal.org packaging script on 2023-05-24
+version: '1.0'
